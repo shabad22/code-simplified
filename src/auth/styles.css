@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --height: 600px;
+    --width: 460px;
+    --cyan: #45f3ff;
+    --dark-blue: #293241;
+    --navy: #001523;
+    font-family: "Lato";
+}
+
+.box {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--navy);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form {
+    position: absolute;
+    inset: 2px;
+    z-index: 10;
+    border-radius: 20px;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #45f3ff;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.input { 
+    margin-bottom: 40px;
+    font-family: "Lato";
+    font-weight: 400;
+    /* letter-spacing: 0.06em; */
+}
+
+.link {
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: "Rubik";
+    color: #495057;
+    padding-bottom: 20px;
+}
+
+.link span {
+    color: var(--cyan);
+    transition: 0.3s;
+
+}
+
+.link span:hover {
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
